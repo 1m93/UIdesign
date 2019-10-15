@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UI Category</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <script src="./js/myjs.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+
+<body>
+  <a id="BTTbutton"></a>
+  <script>
+    var btn = $('#BTTbutton');
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+  </script>
+  <header>
+    <div class="logo"><img alt="" src="./images/logo.png" /></div>
+    <div class="menu_bar">
+      <i class="fas fa-bars" id="menu"></i>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="./index.html">Trang chủ</a></li>
+        <li><a href="./category.html">Mới nhất</a></li>
+        <li><a href="./category.html">Xem nhiều nhất</a></li>
+        <li class="hid"><a href="./action.html">Phim hành động</a></li>
+        <li class="hid"><a href="./vientuong.html">Phim viễn tưởng</a></li>
+        <li class="hid"><a href="./kinhdi.html">Phim kinh dị</a></li>
+        <li class="hid h1"><a href="./haihuoc.html">Phim hài hước</a></li>
+        <li class="hid h1"><a href="./love.html">Phim tình cảm</a></li>
+        <li class="hid h1"><a href="./love.html">Phim khoa học</a></li>
+        <li class="hid h1"><a href="./love.html">Phim hoạt hình</a></li>
+      </ul>
+    </div>
+    <div class="user-action">
+      <ul>
+        <li><i class="fas fa-search"></i></li>
+        <li><a href="./login.html">Đăng nhập</a></li>
+        <li> </li>
+      </ul>
+    </div>
+
+  </header>
+
+  <div class="main_content">
+    <div class="container">
+      <div class="block">
+        <div class="block-title">Phim Hành Động</div>
+        <div class="block-content">
+
+          <!-- <a href="./watch.html">
+                            <div class="block-element">
+                                <p class="box-icon"></p>
+                                <img alt="" src="./images/category/"/>
+                                <p></p>
+                            </div>
+                        </a> -->
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/alita-thien-than-chien-binh.webp" />
+              <p>Alita Thiên Thần Chiến Binh</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/biet-doi-sieu-anh-hung.webp" />
+              <p>Biệt đội Siêu anh hùng</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/chua-te-godzilla.webp" />
+              <p>Chúa tể Godzilla</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/dac-vu-ao-den-xu-menh-toan-cau.webp" />
+              <p>Đặc vụ áo đen: <br> Xứ mệnh toàn cầu</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/di-nhan-8-phuong-hoang-bong-toi.webp" />
+              <p>Dị nhân VIII: <br> Phượng hoàng bóng tối</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/fast-and-furious-hobbs-and-shaw.webp" />
+              <p>Quá nhanh & Quá nguy hiểm: <br> Hobbs & Shaw</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_hanh_dong/nguoi-doi-ac-nhan-bi-an.webp" />
+              <p>Người dơi, ác nhân bí ẩn</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_hanh_dong/nguoi-nhen-xa-nha.webp" />
+              <p>Người nhện xa nhà</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/quy-do-3.webp" />
+              <p>Quỷ đỏ III</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/sat-thu-john-wick.webp" />
+              <p>Sát thủ John Wick</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/tay-dua-huyen-thoai.webp" />
+              <p>Tay đua huyền thoại</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_hanh_dong/tro-choi-vuong-quyen.webp" />
+              <p>Trò chơi vương quyền</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Phim Tình Cảm</div>
+        <div class="block-content">
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/chuyen-di-cua-tinh-yeu.webp" />
+              <p>Chuyến đi của tình yêu</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/co-gai-nam-ay-chung-toi-cung-theo-duoi.webp" />
+              <p>Cô gái năm ấy chúng tôi cùng theo đuổi</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/cuoc-tinh-gian-doi.webp" />
+              <p>Cuộc tình gian dối</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/moi-la.webp" />
+              <p>Mới lạ</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/mong-em-hanh-phuc.webp" />
+              <p>Mong em hạnh phúc</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/nam-buoc-de-yeu.webp" />
+              <p>Năm bước để yêu</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/nu-hon-dau.webp" />
+              <p>Nụ hôn đầu</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/nu-hon-ma-quai.webp" />
+              <p>Nụ hôn ma quái</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/quy-co-gloria-bell.webp" />
+              <p>Quý cô Gloria</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/tu-khi-co-anh.webp" />
+              <p>Từ khi có anh</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/yeu-nham-ban-than.webp" />
+              <p>Yêu nhầm bạn thân</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_tinh_cam/yeu-nham-sep-bu.webp" />
+              <p>Yêu nhầm sếp bự</p>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+
+      <div class="block">
+        <div class=" block-title">Phim Viễn Tưởng</div>
+        <div class="block-content">
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_vien_tuong/aladin-va-cay-den-than.webp" />
+              <p>Aladin và Cây đèn thần</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_vien_tuong/chu-voi-biet-bay.webp" />
+              <p>Chú voi biết bay</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_vien_tuong/dai-ca-hoa-soai-ca.webp" />
+              <p>Đại ca hóa soái ca</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_vien_tuong/giai-cuu-the-gioi.webp" />
+              <p>Giải cứu thế giới</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_vien_tuong/mary-poppins-tro-lai.webp" />
+              <p>Mary Poppins trở lại</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_vien_tuong/ninja-rua.webp" />
+              <p>Ninja Rùa</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_vien_tuong/nu-than-ran.webp" />
+              <p>Nữ thần rắn</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src="./images/category/phim_vien_tuong/robot-dai-chien.webp" />
+              <p>Robot đại chiến</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p> -->
+              <img alt="" src="./images/category/phim_vien_tuong/tham-tu-pikachu.webp" />
+              <p>Thám tử Pikachu</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src=".\images\category\phim_vien_tuong\the-gioi-khung-long.webp" />
+              <p>Thế giới khủng long</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src=".\images\category\phim_vien_tuong\the-than.webp" />
+              <p>Thế Thân</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <!-- <p class="box-icon"></p>  -->
+              <img alt="" src=".\images\category\phim_vien_tuong\toa-thap-dia-nguc.webp" />
+              <p>Tòa tháp địa ngục</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Phim Kinh Dị</div>
+        <div class="block-content">
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\anh-huong.webp" />
+              <p>Ảnh hưởng</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\benh-vien-ma-am.webp" />
+              <p>Bệnh viện ma ám</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\bup-be-ma-am.webp" />
+              <p>Búp bê ma ám</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\bup-be-sat-nhan.webp" />
+              <p>Búp bê sát nhân</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\chiec-dam-ma-quai.webp" />
+              <p>Chiếc đầm ma quái</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\chu-he-ma-quai.webp" />
+              <p>Chú hề ma quái</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\ke-chet-khong-chet.webp" />
+              <p>Kẻ chết không chết</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\le-hoi-dam-mau.webp" />
+              <p>Lễ hội đẫm máu</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\loi-nguyen-8-chan.webp" />
+              <p>Lời nguyền 8 chân</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\sinh-nhat-chet-choc.webp" />
+              <p>Sinh nhật chết chóc</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\su-that-sau-khi-tu-sat.webp" />
+              <p>Sự thật sau khi tự sát</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\thong-long-ma.webp" />
+              <p>Thòng lọng ma</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Phim Hài Hước</div>
+        <div class="block-content">
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\3-chang-ngoc.webp" />
+              <p>Ba chàng ngốc</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\cap-doi-lay-loi.webp" />
+              <p>Cặp đôi lầy lội</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\dang-cap-thu-cung.webp" />
+              <p>Dẳng cấp thú cưng</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\hac-bang-doi-nghe.webp" />
+              <p>Hắc bang đổi nghề</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\ngay_tuu_truong.webp" />
+              <p>Ngày tựu trường</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\nguoi-quen-xa-la.webp" />
+              <p>Người quen xa lạ</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\nha-co-6-anh-em.webp" />
+              <p>Nhà có 6 anh em</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\phong-van-ngoi-sao.webp" />
+              <p>Phỏng vấn ngôi sao</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\thang-em-ly-tuong.webp" />
+              <p>Thằng em lý tưởng</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\thang-ngo-tap-yeu.webp" />
+              <p>Thằng ngố tập yêu</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\tu-dai-gia.webp" />
+              <p>Tứ đại gia</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\xin-choa-quy-ong-ty-phu.webp" />
+              <p>Xin chào quý ông tỷ phú</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="logo"><img alt="" src="./images/logo.png" /></div>
+      <div class="mid-footer">
+        <div class="menu">
+          <ul class="menu1">
+            <li>Gói data</li>
+            <li>Quảng cáo</li>
+            <li>Dịch vụ</li>
+            <li>Thỏa thuận</li>
+            <li>Chính sách</li>
+          </ul>
+          <ul class="menu2">
+            <li><i class="fab fa-android"></i></li>
+            <li><i class="fab fa-apple"></i></li>
+            <li><i class="far fa-bell"></i></li>
+            <li><i class="far fa-comment"></i></li>
+            <li><i class="fab fa-amazon-pay"></i></li>
+          </ul>
+
+
+        </div>
+        <hr>
+        <br />
+        <p>Công ty abc-xyz</p>
+        <p>Địa chỉ: 144 Xuân Thủy - Cầu Giấy - Hà Nội</p>
+        <p>Điện thoại: 0999999999</p>
+      </div>
+      <div class="right-footer">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <br />
+        <p class="ct-ft"><i class="far fa-comment-dots"></i>&nbsp; Hỗ trợ</p>
+        <br />
+        <p class="ct-ft"><i class="fas fa-phone"></i>&nbsp;19006600</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var menu = document.querySelector('#menu');
+    var main = document.querySelector('body');
+    var drawer = document.querySelector('.navigation');
+    var input = document.querySelector('.menu_input_form');
+    menu.addEventListener('click', function (e) {
+      drawer.classList.toggle('open');
+      e.stopPropagation();
+    });
+    main.addEventListener('click', function () {
+      drawer.classList.remove('open');
+
+    });
+  </script>
+</body>
+
+</html>

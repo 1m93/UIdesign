@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UI Category</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+
+<body>
+  <a id="BTTbutton"></a>
+  <script>
+    var btn = $('#BTTbutton');
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+  </script>
+  <header>
+    <div class="logo"><img alt="" src="./images/logo.png" /></div>
+    <div class="menu_bar">
+      <i class="fas fa-bars" id="menu"></i>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="./index.html">Trang chủ</a></li>
+        <li><a href="./category.html">Mới nhất</a></li>
+        <li><a href="./category.html">Xem nhiều nhất</a></li>
+        <li class="hid"><a href="./action.html">Phim hành động</a></li>
+        <li class="hid"><a href="./vientuong.html">Phim viễn tưởng</a></li>
+        <li class="hid"><a href="./kinhdi.html">Phim kinh dị</a></li>
+        <li class="hid h1"><a href="./haihuoc.html">Phim hài hước</a></li>
+        <li class="hid h1"><a href="./love.html">Phim tình cảm</a></li>
+        <li class="hid h1"><a href="./love.html">Phim khoa học</a></li>
+        <li class="hid h1"><a href="./love.html">Phim hoạt hình</a></li>
+      </ul>
+    </div>
+    <div class="user-action">
+      <ul>
+        <li><i class="fas fa-search"></i></li>
+        <li><a href="./login.html">Đăng nhập</a></li>
+        <li> </li>
+      </ul>
+    </div>
+
+  </header>
+
+  <div class="main_content">
+    <div class="container">
+      <div class="block">
+        <div class="block-title">Phim Kinh Dị</div>
+        <div class="block-content">
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\anh-huong.webp" />
+              <p>Ảnh hưởng</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\benh-vien-ma-am.webp" />
+              <p>Bệnh viện ma ám</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\bup-be-ma-am.webp" />
+              <p>Búp bê ma ám</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\bup-be-sat-nhan.webp" />
+              <p>Búp bê sát nhân</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\chiec-dam-ma-quai.webp" />
+              <p>Chiếc đầm ma quái</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\chu-he-ma-quai.webp" />
+              <p>Chú hề ma quái</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\ke-chet-khong-chet.webp" />
+              <p>Kẻ chết không chết</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\le-hoi-dam-mau.webp" />
+              <p>Lễ hội đẫm máu</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\loi-nguyen-8-chan.webp" />
+              <p>Lời nguyền 8 chân</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\sinh-nhat-chet-choc.webp" />
+              <p>Sinh nhật chết chóc</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\su-that-sau-khi-tu-sat.webp" />
+              <p>Sự thật sau khi tự sát</p>
+            </div>
+          </a>
+
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_kinh_di\thong-long-ma.webp" />
+              <p>Thòng lọng ma</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="logo"><img alt="" src="./images/logo.png" /></div>
+      <div class="mid-footer">
+        <div class="menu">
+          <ul class="menu1">
+            <li>Gói data</li>
+            <li>Quảng cáo</li>
+            <li>Dịch vụ</li>
+            <li>Thỏa thuận</li>
+            <li>Chính sách</li>
+          </ul>
+          <ul class="menu2">
+            <li><i class="fab fa-android"></i></li>
+            <li><i class="fab fa-apple"></i></li>
+            <li><i class="far fa-bell"></i></li>
+            <li><i class="far fa-comment"></i></li>
+            <li><i class="fab fa-amazon-pay"></i></li>
+          </ul>
+
+
+        </div>
+        <hr>
+        <br />
+        <p>Công ty abc-xyz</p>
+        <p>Địa chỉ: 144 Xuân Thủy - Cầu Giấy - Hà Nội</p>
+        <p>Điện thoại: 0999999999</p>
+      </div>
+      <div class="right-footer">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <br />
+        <p class="ct-ft"><i class="far fa-comment-dots"></i>&nbsp; Hỗ trợ</p>
+        <br />
+        <p class="ct-ft"><i class="fas fa-phone"></i>&nbsp;19006600</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var menu = document.querySelector('#menu');
+    var main = document.querySelector('body');
+    var drawer = document.querySelector('.navigation');
+    var input = document.querySelector('.menu_input_form');
+    menu.addEventListener('click', function (e) {
+      drawer.classList.toggle('open');
+      e.stopPropagation();
+    });
+    main.addEventListener('click', function () {
+      drawer.classList.remove('open');
+
+    });
+  </script>
+</body>
+
+</html>
