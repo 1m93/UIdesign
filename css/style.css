@@ -17,7 +17,6 @@ a {
   src: url("/fonts/FontsFree-Net-SFProDisplay-Regular.ttf");
   font-family: SFproDisplay;
 }
-
 #BTTbutton {
   display: inline-block;
   background-color: #007bff69;
@@ -143,7 +142,9 @@ header {
   float: left;
   margin: auto 20px;
 }
-
+#main-content {
+  margin-bottom: 15px;
+}
 .main_content {
   padding: 25px 0px 0px;
 }
