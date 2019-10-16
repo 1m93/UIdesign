@@ -121,6 +121,9 @@ header {
   height: 54px;
   align-content: center;
 }
+.navigation ul li a {
+  color: white;
+}
 .navigation ul li:before {
   content: "";
   display: inline-block;
@@ -141,6 +144,9 @@ header {
   list-style: none;
   float: left;
   margin: auto 20px;
+}
+.user-action ul li a {
+  color: white;
 }
 #main-content {
   margin-bottom: 15px;
@@ -293,6 +299,9 @@ footer > .container {
 }
 .right-footer {
   width: 25%;
+}
+.navigation.open a {
+  color: white;
 }
 .menu {
   margin-bottom: 10px;

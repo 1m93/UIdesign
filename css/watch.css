@@ -569,4 +569,14 @@ footer {
     width: 28.33333333333%;
     margin: 2.5%;
   }
+  
+}
+.navigation ul li a {
+  color: white;
+}
+.user-action ul li a {
+  color: white;
+}
+.user-action ul li i {
+  color: white;
 }
