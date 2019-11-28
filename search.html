@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tìm kiếm</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- test input -->
+    <div id="up">
+        <input type="text" id="outcome">
+    </div>
+    <div id="down">
+        <input type="text" id="name" onfocus="focus1(this)" onkeyup="enterLine(this)" onblur="search(this)" placeholder="Nhập tên phim cần tìm...">
+    </div>
+    <!-- header search -->
+    <div id="header-search">
+        <input type="text" id="name" onfocus="focus1(this)" onkeyup="enterLine(this)" oninput="searchkey(this)" onblur="search(this)" placeholder="Nhập tên phim cần tìm...">
+    </div>
+    <!-- search tag input -->
+    <div id="search-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="list-item">
+                        <h4>Phim bộ</h4>
+                        <div class="all-type">
+                            <a href="">Hoa ngữ,&nbsp;</a>
+                            <a href="">Hàn Quốc,&nbsp;</a>
+                            <a href="">Thái Lan,&nbsp;</a>
+                            <a href="">Việt Nam,&nbsp;</a>
+                            <a href="">Nhật Bản,&nbsp;</a>
+                            <a href="">...</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <h4>TV show</h4>
+                        <div class="all-type">
+                            <a href="">Reality show,&nbsp;</a>
+                            <a href="">Game show,&nbsp;</a>
+                            <a href="">Live show,&nbsp;</a>
+                            <a href="">Hot clip,&nbsp;</a>
+                            <a href="">Talk show,&nbsp;</a>
+                            <a href="">...</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <h4>Anime</h4>
+                        <div class="all-type">
+                            <a href="">Hành động,&nbsp;</a>
+                            <a href="">Viễn tưởng,&nbsp;</a>
+                            <a href="">Tình cảm,&nbsp;</a>
+                            <a href="">Kiếm hiệp,&nbsp;</a>
+                            <a href="">Thiếu nhi,&nbsp;</a>
+                            <a href="">...</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <h4>Phim lẻ</h4>
+                        <div class="all-type">
+                            <a href="">Hành động,&nbsp;</a>
+                            <a href="">Gia đình,&nbsp;</a>
+                            <a href="">Hài hước,&nbsp;</a>
+                            <a href="">Kinh dị,&nbsp;</a>
+                            <a href="">Tâm lý,&nbsp;</a>
+                            <a href="">...</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <h4>Phim chiếu rạp</h4>
+                        <div class="all-type">
+                            <a href="">Hành động,&nbsp;</a>
+                            <a href="">Hài hước,&nbsp;</a>
+                            <a href="">Kinh dị,&nbsp;</a>
+                            <a href="">Tâm lý,&nbsp;</a>
+                            <a href="">Viễn tưởng,&nbsp;</a>
+                            <a href="">...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="search-tag">
+                        <div class="list-tag">
+                            <h4>Tìm kiếm hàng đầu</h4>
+                            <ul>
+                                <li><a href="">running man</a></li>
+                                <li><a href="">hương mật tựa khói sương (thuyết minh)</a></li>
+                                <li><a href="">fairy tail</a></li>
+                                <li><a href="">anh không thích thế giới này, anh chỉ thích em</a></li>
+                                <li><a href="">đao kiếm thần vực</a></li>
+                                <li><a href="">cô dâu bất đắc dĩ</a></li>
+                                <li><a href="">đông cung</a></li>
+                                <li><a href="">thất hình đại tội (phần 3)</a></li>
+                                <li><a href="">hương mật tựa khói sương</a></li>
+                                <li><a href="">dr. stone</a></li>
+                                <li><a href="">thất hình đại tội</a></li>
+                                <li><a href="">cá mực hầm mật</a></li>
+                                <li><a href="">tiểu sử chàng nokdu</a></li>
+                                <li><a href="">black clover</a></li>
+                                <li><a href="">naruto</a></li>
+                                <li><a href="">Mùa thu 2019</a></li>
+                                <li><a href="">Ông thầy vi diệu</a></li>
+                                <li><a href="">sóng gió song sinh</a></li>
+                                <li><a href="">conan</a></li>
+                                <li><a href="">boruto: naruto next generations</a></li>
+                                <li><a href="">we got married</a></li>
+                                <li><a href="">gửi thời thanh xuân ngây thơ tươi đẹp</a></li>
+                                <li><a href="">Thử Thách Thần Tượng</a></li>
+                                <li><a href="">naruto shippuden</a></li>
+                                <li><a href="">thần chết</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search result -->
+    <div id="search-result">
+        <div class="container">
+            <div class="search-filter">
+                <div class="left-filter left">
+                    <h4>Phân loại</h4>
+                    <div class="block-filter">
+                        <div class="select filter-1"><select class="browser-default">
+                                <option value="all">Tất cả quốc gia <i class="fa fa-caret-down fa-lg"></i></option>
+                                <option value="Vietnam">Việt Nam</option>
+                                <option value="Japan">Nhật Bản</option>
+                                <option value="China">Trung Quốc</option>
+                                <option value="USA">Mỹ</option>
+                                <option value="Korea">Hàn Quốc</option>
+                                <option value="Thailand">Thái Lan</option>
+                                <option value="HongKong">Hồng Kông</option>
+                                <option value="India">Ấn Độ</option>
+                                <option value="Others">Khác</option>
+                            </select></div>
+                        <div class="select filter-2"><select class="browser-default">
+                                <option value="all">Tất cả thể loại</option>
+                                <option value="khoa học viễn tưởng">Khoa học viễn tưởng</option>
+                                <option value="hành động">Hành động</option>
+                                <option value="kinh dị">Kinh dị</option>
+                                <option value="tình cảm">Tình cảm</option>
+                                <option value="hài hước">Hài hước</option>
+                                <option value="game show">Game show</option>
+                                <option value="hoạt hình">Hoạt hình</option>
+                                <option value="phim tài liệu">Phim tài liệu</option>
+                            </select></div>
+                        <div class="select filter-3"><select class="browser-default">
+                                <option value="all">Tất cả năm sản xuất</option>
+                                <option value="<2013">&lt;2013</option>
+                                <option value="=2013">2013</option>
+                                <option value="=2014">2014</option>
+                                <option value="=2015">2015</option>
+                                <option value="=2016">2016</option>
+                                <option value="=2017">2017</option>
+                                <option value="=2018">2018</option>
+                                <option value="2019-present">Từ 2019 đến nay</option>
+                            </select></div>
+                    </div>
+                </div>
+                <div class="right-filter left">
+                    <h4>Sắp xếp</h4>
+                    <div class="block-filter">
+                        <div class="select filter-4"><select class="browser-default">
+                                <option value="sort-all">Tất cả</option>
+                                <option value="subtracted_days-asc">Phim cũ nhất</option>
+                                <option value="subtracted_days-desc">Phim mới nhất</option>
+                                <option value="all_view_count-asc">Phim ít được xem nhất</option>
+                                <option value="all_view_count-desc">Phim được xem nhiều</option>
+                            </select></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block">
+                
+                <div class="block-content">
+                    <a href="./watch.html">
+                        <div class="block-element-spe">
+                            <img alt="" src="./images/hunter-x-hunter220-12-2018_17g26-04.webp" />
+                            <p>HunterxHunter</p>
+                        </div>
+                    </a>
+                    <a href="./watch.html">
+                        <div class="block-element-spe">
+                            <img alt="" src="./images/bietdoiseal_12-10-2019.webp" />
+                            <p>Biệt đội SEAL</p>
+                        </div>
+                    </a>
+                    <a href="./watch.html">
+                        <div class="block-element-spe">
+                            <img alt="" src="./images/tiachop_12-10-2019.webp" />
+                            <p>Tia chớp (Phần 4)</p>
+                        </div>
+                    </a>
+                    <a href="./watch.html">
+                        <div class="block-element-spe">
+                            <img alt="" src="./images/kysisanco.webp" />
+                            <p>Kị sĩ sân cỏ</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="extend">
+            <a href="">
+                Xem thêm
+            </a>
+        </div>
+    </div>
+    <p id="demo"></p>
+    <script type="text/javascript" src="js/search.js"></script>
+</body>
+
+</html>
