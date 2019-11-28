@@ -139,11 +139,16 @@ header {
 }
 .user-action {
   padding-top: 15px;
+  min-width: 150px;
 }
 .user-action ul li {
   list-style: none;
   float: left;
-  margin: auto 20px;
+  margin: auto 15px;
+}
+.user-action ul li:hover,.user-action ul li:hover>a{
+  color: Rgb(23, 129, 194);
+  cursor: pointer;
 }
 .user-action ul li a {
   color: white;
@@ -294,6 +299,9 @@ footer > .container {
 .mid-footer {
   width: 55%;
 }
+.mid-footer hr{
+  background: #9b9b9b;
+}
 .mid-footer p {
   line-height: 20px;
 }
@@ -314,17 +322,15 @@ footer > .container {
   display: inline-block;
   float: right;
 }
+
 .menu1 > li {
   list-style: none;
   float: left;
-  margin-right: 14px;
-  padding: 5px;
+  margin-right: 20px;
 }
 .menu1 li:hover {
   cursor: pointer;
-  background: Rgb(23, 129, 194);
-  border-radius: 6px;
-  color: #ffffff;
+  color: Rgb(23, 129, 194);
 }
 .menu2 > li {
   list-style: none;
