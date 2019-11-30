@@ -357,6 +357,9 @@ footer > .container {
   margin: 0 auto;
   max-width: 380px;
 }
+.login-title h2 {
+  margin-bottom: -30px;        
+}
 .inner {
   background: #1f1f1f;
   padding-top: 40px;
@@ -371,8 +374,9 @@ footer > .container {
   outline: none;
   padding-left: 10px;
 }
-.text-area {
+.text-area a:hover {
   margin-top: 15px;
+  color: #ff6500;
 }
 .bt-group {
   margin: 10px auto;

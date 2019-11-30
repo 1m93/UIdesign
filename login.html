@@ -1,104 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Đăng nhập</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
     <script src="./js/myjs.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 </head>
-
 <body>
-    <a id="BTTbutton"></a>
-    <script>
-        var btn = $('#BTTbutton');
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, '300');
-        });
-    </script>
-    <header>
-        <div class="logo"><img alt="" src="./images/logo.png" /></div>
-        <div class="menu_bar">
-            <i class="fas fa-bars" id="menu"></i>
-        </div>
-        <div class="navigation">
-            <ul>
-                <li><a href="./index.html">Trang chủ</a></li>
-                <li><a href="./category.html">Mới nhất</a></li>
-                <li><a href="./category.html">Xem nhiều nhất</a></li>
-                <li class="hid"><a href="./action.html">Phim hành động</a></li>
-                <li class="hid"><a href="./vientuong.html">Phim viễn tưởng</a></li>
-                <li class="hid"><a href="./kinhdi.html">Phim kinh dị</a></li>
-                <li class="hid h1"><a href="./haihuoc.html">Phim hài hước</a></li>
-                <li class="hid h1"><a href="./love.html">Phim tình cảm</a></li>
-                <li class="hid h1"><a href="./love.html">Phim khoa học</a></li>
-                <li class="hid h1"><a href="./love.html">Phim hoạt hình</a></li>
-            </ul>
-        </div>
-        <div class="user-action">
-            <ul>
-                <li><i class="fas fa-search"></i></li>
-                <li><a href="./login.html">Đăng nhập</a></li>
-                <li> </li>
-            </ul>
-        </div>
-
-    </header>
+        <header>
+                <div class="logo"><img alt="" src="./logo.png"></div>
+                <div class="menu_bar">
+                        <i class="fas fa-bars" id="menu"></i>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./index.html">Mới nhất</a></li>
+                        <li><a href="./index.html">Xem nhiều nhất</a></li>
+                        <li class="hid"><a href="./index.html">Phim hành động</a></li>
+                        <li class="hid"><a href="./index.html">Phim viễn tưởng</a></li>
+                        <li class="hid"><a href="./index.html">Phim kinh dị</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim hài hước</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim tình cảm</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim khoa học</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim hoạt hình</a></li>
+                    </ul>
+                </div>
+                <div class="user-action">
+                    <ul>
+                        <li><i class="fas fa-search"></i></li>
+                        <li><a href="./login.html">Đăng nhập</a></li>
+                        <li>    </li>
+                    </ul>
+                </div>
+        
+            </header>
     <div id="main-content">
         <div class="container">
             <div class="form-area">
-
+            
                 <div class="login">
-                    <div class="login-title">
-                        <h2>Đăng nhập</h2>
-                    </div>
+                    <h2 class="login-title">Đăng nhập</h2>
                     <div class="inner">
                         <div class="form-group">
-                            <input type="text" value="" placeholder="Điện thoại" class="form-control">
+                                <input type="text" value="" placeholder="Điện thoại" class="form-control">
                         </div>
                         <div class="form-group">
-                            <input type="text" value="" placeholder="Mật khẩu" class="form-control">
+                                <input type="password" value="" placeholder="Mật khẩu" class="form-control">
                         </div>
                         <button class="btn btn-login">Đăng nhập</button>
                         <div class="text-area">
-                            <a href="#">Quên mật khẩu?</a>
-                            <p>Hoặc</p>
+                            <a href="#">Quên mật khẩu</a>
+                            <p>
+                                <span>Hoặc</span>
+                            </p>
                         </div>
                         <div class="bt-group">
                             <button class="btn btn-facebook">Facebook</button>
                             <button class="btn btn-google">Google</button>
                         </div>
-                        <div class="text-area">
-                            <a href="./SignUp.html">Bạn chưa có tài khoản?</a>
+                        <div class="text-area" style="margin-top: -30px;">
+                                <div style="margin-bottom: 20px;">
+                                    Chưa có tài khoản?
+                                    <a href="./SignUp.html" class="">Đăng ký ngay.</a>
+                                </div>
                         </div>
                     </div>
                 </div>
-
+                
             </div>
         </div>
     </div>
     <footer>
         <div class="container">
-            <div class="logo"><img alt="" src="./images/logo.png" /></div>
-            <div class="mid-footer">
-                <div class="menu">
+                <div class="logo"><img alt="" src="./logo.png"></div>
+                <div class="mid-footer">
+                    <div class="menu">
                     <ul class="menu1">
                         <li>Gói data</li>
                         <li>Quảng cáo</li>
@@ -107,44 +89,41 @@
                         <li>Chính sách</li>
                     </ul>
                     <ul class="menu2">
-                        <li><i class="fab fa-android"></i></li>
-                        <li><i class="fab fa-apple"></i></li>
-                        <li><i class="far fa-bell"></i></li>
-                        <li><i class="far fa-comment"></i></li>
-                        <li><i class="fab fa-amazon-pay"></i></li>
+                            <li><i class="fab fa-android"></i></li>
+                            <li><i class="fab fa-apple"></i></li>
+                            <li><i class="far fa-bell"></i></li>
+                            <li><i class="far fa-comment"></i></li>
+                            <li><i class="fab fa-amazon-pay"></i></li>
                     </ul>
                     <hr>
+                    </div>
+                    <p>Công ty abc-xyz</p>
+                    <p>Địa chỉ: 144 Xuân Thủy - Câù giấy - Hà Nội</p>
+                    <p>Điện thoại: 0999999999</p>
                 </div>
-                <p>Công ty abc-xyz</p>
-                <p>Địa chỉ: 144 Xuân Thủy - Cầu Giấy - Hà Nội</p>
-                <p>Điện thoại: 0999999999</p>
-            </div>
-            <div class="right-footer">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-youtube"></i>
-                <br />
-                <p class="ct-ft"><i class="far fa-comment-dots"></i>&nbsp; Hỗ trợ</p>
-                <br />
-                <p class="ct-ft"><i class="fas fa-phone"></i>&nbsp;19006600</p>
-            </div>
+                <div class="right-footer">
+                        <i class="fab fa-facebook"></i>
+                        <br>
+                        <p class="ct-ft"><i class="far fa-comment-dots"></i>&nbsp; Ho tro</p>
+                        <br>
+                        <p class="ct-ft"><i class="fas fa-phone"></i>&nbsp;19006600</p>
+                </div>
         </div>
     </footer>
     <script>
-        var menu = document.querySelector('#menu');
-        var main = document.querySelector('body');
-        var drawer = document.querySelector('.navigation');
-        var input = document.querySelector('.menu_input_form');
-        menu.addEventListener('click', function (e) {
-            drawer.classList.toggle('open');
-            e.stopPropagation();
-        });
-        main.addEventListener('click', function () {
-            drawer.classList.remove('open');
+            var menu = document.querySelector('#menu');
+				var main = document.querySelector('body');
+				var drawer = document.querySelector('.navigation');
+				var input = document.querySelector('.menu_input_form');
+				menu.addEventListener('click', function(e) {
+					drawer.classList.toggle('open');
+					e.stopPropagation();
+				});
+				main.addEventListener('click', function() {
+					drawer.classList.remove('open');
+					
+				});
+        </script>
 
-        });
-    </script>
-</body>
-
+  </body>
 </html>
